@@ -3,7 +3,7 @@ site_description: "Study notes based on Nils J. Nilsson"
 site_author: "Pouya"
 
 repo_url: "https://github.com/pouyatavakoli/AI-notes"
-repo_name: "pouyatavakoli/AI-notes"
+repo_name: "AI Notes on GitHub"
 
 theme:
   name: material
@@ -12,22 +12,24 @@ theme:
     repo: fontawesome/brands/github
     logo: material/brain
   features:
-
+    # Navigation & layout
     - navigation.instant
-    - navigation.tabs
-    - navigation.sections
+    - navigation.top
     - navigation.expand
+    - navigation.tracking
+    - navigation.hide
     - toc.integrate
-
+    - toc.follow
+    - navigation.footer
+    - navigation.sections
+    - navigation.tabs
+    # Content & interaction
     - content.code.copy
-    #- content.action.edit
     - content.tabs.link
     - content.tooltips
-
+    - header.autohide
     - search.suggest
     - search.highlight
-    - header.autohide
-    - navigation.top
   palette:
     - scheme: default
       primary: indigo
@@ -44,6 +46,11 @@ theme:
   font:
     text: "Inter"
     code: "Fira Code"
+  typography:
+    text:
+      line_height: 1.7
+    headings:
+      font_weight: 600
 
 nav:
   - Home: index.md
@@ -71,6 +78,11 @@ markdown_extensions:
       alternate_style: true
   - pymdownx.arithmatex:
       generic: true
+  - pymdownx.tasklist
+  - pymdownx.caret
+  - pymdownx.emoji
+  - pymdownx.betterem:
+      smart_enable: all
 
 extra:
   social:
@@ -78,8 +90,9 @@ extra:
       link: https://github.com/pouyatavakoli
       name: GitHub
     - icon: fontawesome/brands/linkedin
-      link: www.linkedin.com/in/pouya-t/
+      link: https://www.linkedin.com/in/pouya-t/
       name: LinkedIn
-  analytics:
-    provider: google
-    property: G-XXXXXXX
+  generator: false
+
+extra_css:
+  - styles/extra.css
