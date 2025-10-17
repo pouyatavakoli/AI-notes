@@ -1,22 +1,63 @@
-site_name: Principles of Artificial Intelligence Notes
-site_author: Pouya
-site_description: Study notes based on Nils J. Nilsson
+site_name: "Principles of Artificial Intelligence Notes"
+site_description: "Study notes based on Nils J. Nilsson"
+site_author: "Pouya"
+
+repo_url: "https://github.com/pouyatavakoli/AI-notes"
+repo_name: "pouyatavakoli/AI-notes"
+
 theme:
   name: material
+  language: en
+  icon:
+    repo: fontawesome/brands/github
+    logo: material/brain
+  favicon: assets/favicon.png
+  logo: assets/logo.png
   features:
+
     - navigation.instant
+    - navigation.tabs
+    - navigation.sections
     - navigation.expand
     - toc.integrate
+
     - content.code.copy
+    #- content.action.edit
+    - content.tabs.link
+    - content.tooltips
+
+    - search.suggest
     - search.highlight
+    - header.autohide
+    - navigation.top
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: lime
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  font:
+    text: "Inter"
+    code: "Fira Code"
+
 nav:
   - Home: index.md
   - Chapters:
       - "Chapter 1 - Production Systems": chapters/chapter1-production-systems.md
       - "Chapter 2 - Search and Control Strategies": chapters/chapter2-search-and-control-strategies.md
-      - Glossary: summaries/glossary.md
+  - Glossary: summaries/glossary.md
+  - About: about.md
+
 markdown_extensions:
   - admonition
+  - attr_list
   - toc:
       permalink: true
   - codehilite
@@ -24,3 +65,23 @@ markdown_extensions:
   - def_list
   - pymdownx.details
   - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.mark
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.arithmatex:
+      generic: true
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/pouyatavakoli
+      name: GitHub
+    - icon: fontawesome/brands/linkedin
+      link: www.linkedin.com/in/pouya-t/
+      name: LinkedIn
+  analytics:
+    provider: google
+    property: G-XXXXXXX
