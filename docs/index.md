@@ -6,6 +6,6 @@ These are my structured chapter summaries from *Nils J. Nilsson — Principles o
 
 
 ## Resources
-- [Glossary](../summaries/glossary.md)
-- [Key Terms](../summaries/key-terms.md)
-- [Exercises](../summaries/exercises.md)
+- [Glossary](summaries/glossary.md)
+- [Key Terms](summaries/key-terms.md)
+- [Exercises](summaries/exercises.md)
