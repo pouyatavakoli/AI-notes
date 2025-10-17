@@ -1,7 +1,3 @@
-/* ─────────────────────────────────────────────
-   Elegant minimal theme inspired by top open-source docs
-   ───────────────────────────────────────────── */
-
 /* --- Body text and layout --- */
 .md-content {
   max-width: 900px;
@@ -37,8 +33,15 @@
 /* --- Paragraphs --- */
 .md-typeset p {
   text-align: justify;
+  text-justify: inter-word;
   text-indent: 1.2em;
-  margin-bottom: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .md-typeset p {
+    text-align: left;
+    text-indent: 0;
+  }
 }
 
 /* --- Lists --- */
