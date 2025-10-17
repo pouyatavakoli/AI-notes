@@ -13,7 +13,7 @@ nav:
   - Home: index.md
   - Chapters:
       - "Chapter 1 - Production Systems": chapters/chapter1-production-systems.md
-  - Summaries:
+      - "Chapter 2 - Search and Control Strategies": chapters/chapter2-search-and-control-strategies.md
       - Glossary: summaries/glossary.md
 markdown_extensions:
   - admonition
