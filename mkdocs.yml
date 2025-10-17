@@ -1,0 +1,26 @@
+site_name: Principles of Artificial Intelligence Notes
+site_author: Pouya
+site_description: Study notes based on Nils J. Nilsson
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.expand
+    - toc.integrate
+    - content.code.copy
+    - search.highlight
+nav:
+  - Home: index.md
+  - Chapters:
+      - "Chapter 1 - Production Systems": chapters/chapter1-production-systems.md
+  - Summaries:
+      - Glossary: summaries/glossary.md
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - codehilite
+  - footnotes
+  - def_list
+  - pymdownx.details
+  - pymdownx.superfences

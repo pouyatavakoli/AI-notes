@@ -1,0 +1,4 @@
+- Declarative knowledge
+- Procedural knowledge
+- Commutative system
+- Decomposable system
